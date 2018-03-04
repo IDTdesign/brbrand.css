@@ -1,0 +1,57 @@
+// colors
+// ======
+
+
+// for use inside less
+@brandred:   #e21a23;
+@brandgreen: #3bb14a;
+@brandblue:  #3899e9;
+@brandgrey:  #727273;
+@brandblack: #000;
+@brandwhite: #fff;
+
+// global custom properties
+:root {
+  --brandred: @brandred;
+  --brandgreen: @brandgreen;
+  --brandgrey: @brandgrey;
+  --brandblack: @brandblack;
+  --brandwhite: @brandwhite;
+}
+
+// common styles
+
+html {
+  color: var(--brandblack, @brandblack);
+  background-color: var(--brandwhite, @brandwhite);
+}
+
+a {
+  color: var(--brandblue,  @brandblue);
+}
+
+// atomic classes
+.brandred   { color: var(--brandred,   @brandred) }
+.brandgreen { color: var(--brandgreen, @brandgreen) }
+.brandblue  { color: var(--brandblue,  @brandblue) }
+.brandgrey  { color: var(--brandgrey,  @brandgrey) }
+.brandblack { color: var(--brandblack, @brandblack) }
+.brandwhite { color: var(--brandwhite, @brandwhite) }
+
+.brandred-bg   { background-color: var(--brandred,   @brandred) }
+.brandgreen-bg { background-color: var(--brandgreen, @brandgreen) }
+.brandblue-bg  { background-color: var(--brandblue,  @brandblue) }
+.brandgrey-bg  { background-color: var(--brandgrey,  @brandgrey) }
+.brandblack-bg { background-color: var(--brandblack, @brandblack) }
+.brandwhite-bg { background-color: var(--brandwhite, @brandwhite) }
+
+.brandred-bd   { border-color: var(--brandred,   @brandred) }
+.brandgreen-bd { border-color: var(--brandgreen, @brandgreen) }
+.brandblue-bd  { border-color: var(--brandblue,  @brandblue) }
+.brandgrey-bd  { border-color: var(--brandgrey,  @brandgrey) }
+.brandblack-bd { border-color: var(--brandblack, @brandblack) }
+.brandwhite-bd { border-color: var(--brandwhite, @brandwhite) }
+
+// fonts
+// =====
+
